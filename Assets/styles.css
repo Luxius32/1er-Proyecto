@@ -140,9 +140,9 @@ main {
 
 .info-empresa {
     background: var(--primary);
-    max-width: 1600px;
-    padding: 50px 30px;
-    margin: 30px 0px 100px 0px;
+    max-width: 1200px;
+    padding: 50px 150px;
+    margin: 30px 0px 80px 0px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -151,14 +151,16 @@ main {
 .info-empresa h2 {
     display: flex;
     justify-content: start;
-    margin-bottom: 15px;
-}
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 800;
 
+}
 
 .info-empresa p {
     display: flex;
     text-align: justify;
     font-size: 25px;
     font-weight: 600;
-    padd
+    padding: 5px;
 }
