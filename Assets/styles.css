@@ -32,7 +32,7 @@
 /* header */
 header {
     /* background: var(--primary); */
-    background: linear-gradient(80deg, var(--primary), var(--secondary));
+    background: linear-gradient(to top, var(--primary), var(--secondary));
     padding: 35px 10px;
     width: 100%;
     height: 40px;
@@ -76,6 +76,11 @@ header {
 }
 
 /* header */
+body {
+    background-image: url(/Assets/Imagenes/body.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 /* main */
 main {
@@ -86,15 +91,18 @@ main {
     color: var(--text-black);
 }
 
+/* portada */
+
 #portada {
     padding: 30px 10px;
     margin-top: 0px;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    background-image: url(/Assets/Imagenes/Fondo.jpg);
+    /* background-image: url(/Assets/Imagenes/Fondo.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     gap: 20px;
 }
 
@@ -151,27 +159,40 @@ main {
     background: var(--primary);
 }
 
-/* información de la empresa */
+/* portada */
+
+/* info empresa */
+
+#info {
+    /* background-image: url(/Assets/Imagenes/Fondo.jpg);
+    background-position: center;
+    background-size: cover; */
+    /* background: linear-gradient(0deg, var(--primary), var(--secondary)); */
+    width: 100%;
+    padding: 70px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+#info img {
+    width: 40%;
+}
 
 .info-empresa {
-    background: var(--primary);
-    max-width: 1200px;
-    width: 1000px;
-    padding: 50px 200px;
-    margin: 30px 0px 80px 0px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 50px 80px 5px;
+    align-items: center;
 }
 
 .info-empresa h2 {
     display: flex;
-    justify-content: start;
+    align-items: flex-start;
     margin-bottom: 40px;
-    font-size: 32px;
+    font-size: 50px;
     font-weight: 800;
-
 }
 
 .info-empresa p {
@@ -179,17 +200,24 @@ main {
     text-align: justify;
     font-size: 25px;
     font-weight: 600;
-    padding: 5px;
+    padding: 10px 5px;
 }
 
+/* info empresa */
+
+/* cards */
+
 #cards {
+    padding: 100px 30px 20px;
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
-    margin-top: 200px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background: var(--primary);
+    width: 100%;
+    gap: 10px;
+    /* background-image: url(/Assets/Imagenes/Fondo.jpg);
+    background-position: center;
+    background-size: cover; */
 }
 
 .cards-title {
@@ -197,7 +225,23 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
+}
+
+.cards-title h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.cards-title p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 800;
 }
 
 .card-icon {
@@ -205,28 +249,48 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .cards-conteiner {
-    padding: 30px;
+    padding: 10px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary);
     gap: 30px;
 }
 
 .card {
-    background: var(--button);
-    width: 300px;
-    height: 320px;
-    padding: 10px;
+    /* background: var(--secondary); */
+    width: 320px;
+    height: 340px;
+    padding: 20px 15px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to top, var(--primary), var(--secondary));
+    box-shadow: 2px 2px 3px 1px black;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 600;
     text-align: center;
-    box-shadow: 5px 5px 10px;
 }
 
 footer {
@@ -234,20 +298,22 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--secondary);
+    /* background: var(--secondary); */
 }
 
 #contact {
     display: flex;
-    max-width: 1200px;
-    padding: 100px 50px;
-    justify-content: space-around;
+    width: 80%;
+    padding: 150px 20px 150px;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 #contact img:last-child {
-    width: 35%;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
 }
 
 .contact-datos {
@@ -257,19 +323,45 @@ footer {
     gap: 20px;
 }
 
-.datos-list li {
+.contact-datos h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.datos-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.datos-list span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.datos {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 #footer-bot {
-    background: #a32222;
+    background: linear-gradient(to bottom, var(--primary), var(--secondary));
+    margin-top: 100px;
+    padding: 0px 10px 30px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:20px;
 }
 
 #footer-bot hr {
@@ -293,7 +385,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0px 10px 0px;
+    padding: 70px 0px 5px;
 }
 
 .redes-link {
