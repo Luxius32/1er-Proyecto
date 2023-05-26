@@ -94,6 +94,7 @@ main {
 /* portada */
 
 #portada {
+    max-width: 1200px;
     padding: 30px 10px;
     margin-top: 0px;
     display: flex;
@@ -151,7 +152,7 @@ main {
     padding: 10px 30px;
     background: var(--secondary);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px 20px;
     box-shadow: 2px 3px;
 }
 
@@ -164,11 +165,7 @@ main {
 /* info empresa */
 
 #info {
-    /* background-image: url(/Assets/Imagenes/Fondo.jpg);
-    background-position: center;
-    background-size: cover; */
-    /* background: linear-gradient(0deg, var(--primary), var(--secondary)); */
-    width: 100%;
+    max-width: 1200px;
     padding: 70px 40px;
     display: flex;
     justify-content: space-between;
@@ -208,16 +205,14 @@ main {
 /* cards */
 
 #cards {
+    max-width: 1200px;
     padding: 100px 30px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     gap: 5px;
-    /* background-image: url(/Assets/Imagenes/Fondo.jpg);
-    background-position: center;
-    background-size: cover; */
 }
 
 .cards-title {
@@ -253,18 +248,19 @@ main {
 }
 
 .cards-conteiner {
-    padding: 5px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .card {
     /* background: var(--secondary); */
     width: 280px;
-    height: 300px;
+    height: 320px;
     padding: 20px 15px 20px;
+    border-radius: 10px 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,6 +297,7 @@ footer {
 }
 
 #contact {
+    max-width: 1200px;
     display: flex;
     width: 80%;
     padding: 150px 20px 150px;
@@ -348,7 +345,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -360,7 +357,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }
 
 #footer-bot hr {
