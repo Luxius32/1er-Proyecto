@@ -73,11 +73,17 @@ header {
     padding: 10px 30px;
     width: 15%;
     cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    cursor: pointer;
 }
 
 /* header */
 body {
-    background-image: url(/Assets/Imagenes/body.jpg);
+    background-image: url(/Assets/Imagenes/body2.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -94,9 +100,9 @@ main {
 /* portada */
 
 #portada {
-    max-width: 1200px;
+    width: 100%;
     padding: 30px 10px;
-    margin-top: 0px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -131,6 +137,11 @@ main {
     font-size: 5rem;
     font-weight: 800;
     text-align: center;
+    padding: 40px 100px 10px;
+    background: linear-gradient(to right, var(--primary), var(--button));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .portada-left p {
@@ -370,11 +381,11 @@ footer {
 
 .proveedores {
     display: flex;
-    max-width: 1200px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     gap: 200px;
-    padding: 50px 0px 20px 0px;
+    padding: 50px 20px;
 }
 
 .redes-conteiner {
@@ -412,4 +423,17 @@ footer {
 .copy-info h5 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
+}
+
+/* Gradientes */
+
+header {
+    background: linear-gradient(to bottom, var(--primary),white );
+}
+
+/* Menu hamburguesa */
+
+.menu-label,
+#menu-toggle {
+display: none;
 }
