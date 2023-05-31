@@ -329,7 +329,7 @@
 
     #portada {
         width: 300px;
-        margin: 50px 10px ;
+        margin: 150px 10px ;
     }
 
     #portada img {
@@ -342,7 +342,7 @@
     }
 
     .portada-left h1{
-        font-size: 60px;
+        font-size: 70px;
         font-weight: bold;
     }
     .portada-left p {
@@ -368,6 +368,11 @@
         margin-bottom: 0;
     }
 
+#cards {
+    margin: 50px 0px;
+    padding: 20px px;
+}
+
     .cards-conteiner {
         display: flex;
         flex-direction: column;
@@ -376,10 +381,11 @@
 
     .card {
         width: 390px;
-        height: 230px;
+        height: 200px;
         border-radius: 10px;
         display: flex;
         align-items: center;
+        gap: 1px;
     }
 
     .card-info h3 {
@@ -387,15 +393,16 @@
     }
 
     .card-icon {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
+        width: 80px;
+        height: 80px;
+        padding: 5px;
     }
 
     /* FOOTER */
 
     #contact {
         width: 400px;
+        margin: 30px 0px;
     }
 
     .contact-datos {
