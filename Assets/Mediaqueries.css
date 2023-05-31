@@ -329,7 +329,7 @@
 
     #portada {
         width: 300px;
-        margin: 150px 10px ;
+        margin: 150px 10px;
     }
 
     #portada img {
@@ -341,10 +341,11 @@
         justify-content: center;
     }
 
-    .portada-left h1{
+    .portada-left h1 {
         font-size: 70px;
         font-weight: bold;
     }
+
     .portada-left p {
         padding: 0px;
     }
@@ -368,16 +369,20 @@
         margin-bottom: 0;
     }
 
-#cards {
-    margin: 50px 0px;
-    padding: 20px px;
-}
+    #cards {
+        margin: 50px 0px;
+        padding: 20px px;
+    }
+
+    .cards-title h2 {
+        margin: 0px 0px 20px;
+    }
 
     .cards-conteiner {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }        
+    }
 
     .card {
         width: 390px;
@@ -403,6 +408,7 @@
     #contact {
         width: 400px;
         margin: 30px 0px;
+        padding: 150px 20px 20px;
     }
 
     .contact-datos {
