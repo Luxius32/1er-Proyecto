@@ -328,7 +328,7 @@
     }
 
     #portada {
-        width: 300px;
+        width: 400px;
         margin: 150px 10px;
     }
 
@@ -337,17 +337,19 @@
     }
 
     .portada-left {
-        width: 500px;
+        width: 600px;
         justify-content: center;
     }
 
     .portada-left h1 {
-        font-size: 70px;
+        font-size: 80px;
         font-weight: bold;
+        padding: 20px 5px;
     }
 
     .portada-left p {
         padding: 0px;
+        font-size: 25px;
     }
 
     #info {
