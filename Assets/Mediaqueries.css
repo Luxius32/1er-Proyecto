@@ -1,7 +1,6 @@
 /* Tablet */
 @media (max-width: 992px) {
 
-
     /* HEADER */
     header {
         max-width: 992px;
@@ -135,6 +134,12 @@
         width: 50%;
     }
 
+    /* INFO */
+
+    /*  */
+    /*  */
+    /*  */
+
     /* CARDS */
     #cards {
         padding: 80px 30px 20px;
@@ -177,8 +182,13 @@
         margin: 5px 0px 10px;
     }
 
-    /* Footer */
+    /* CARDS */
 
+    /*  */
+    /*  */
+    /*  */
+
+    /* FOOTER */
     .contact-datos span {
         font-size: 20px;
     }
@@ -195,8 +205,214 @@
     .redes-conteiner {
         padding: 30px 0px 5px;
     }
+}
 
+@media (max-width: 768px) {
 
+    /* HEADER */
+    header {
+        max-width: 768px;
+    }
 
+    .logo {
+        width: 90px;
+        padding: 10px;
+    }
+
+    /* HEADER */
+
+    /*  */
+    /*  */
+    /*  */
+
+    /* MAIN */
+    main {
+        max-width: 768px;
+    }
+
+    /* PORTADA */
+    #portada {
+        width: 450px;
+    }
+
+    .portada-left {
+        gap: 5px;
+    }
+
+    .portada-left h1 {
+        font-size: 50px;
+    }
+
+    .portada-left p {
+        font-size: 18px;
+    }
+
+    .buttons {
+        font-size: 16px;
+        font-weight: 800;
+        padding: 10px 30px;
+        background: var(--secondary);
+        border: none;
+        border-radius: 5px 20px;
+        box-shadow: 2px 3px;
+    }
+
+    .active {
+        background: var(--primary);
+    }
+
+    /* PORTADA */
+
+    /* INFO */
+
+    .info-empresa h2 {
+        font-size: 30px;
+    }
+
+    .info-empresa p {
+        font-size: 18px;
+    }
+
+    .proveedores {
+        max-width: 768px;
+    }
+
+    /* INFO */
+
+    /* CARDS */
+    .cards-title h2 {
+        font-size: 30px;
+    }
+
+    .cards-title p {
+        font-size: 18px;
+    }
+
+    .card-info h3 {
+        font-size: 18px;
+    }
+
+    .card-info p {
+        font-size: 16px;
+    }
+
+    /* CARDS */
+
+    /* CONTACT */
+    #contact {
+        gap: 50px;
+    }
+
+    .contact-datos h2 {
+        font-size: 30px;
+    }
+
+    .proveedores img {
+        width: 30%;
+    }
+
+    .datos span {
+        font-size: 18px;
+    }
+
+    .datos p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* HEADER */
+    header {
+        max-width: 576px;
+    }
+
+    #portada {
+        width: 300px;
+        margin: 50px 10px ;
+    }
+
+    #portada img {
+        display: none;
+    }
+
+    .portada-left {
+        width: 500px;
+        justify-content: center;
+    }
+
+    .portada-left h1{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .portada-left p {
+        padding: 0px;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin: 40px 20px;
+        padding: 10px 5px;
+        background: linear-gradient(to top, var(--primary), var(--secondary));
+        border-radius: 35px 35px;
+        box-shadow: 2px 2px 3px 1px black;
+    }
+
+    #info img {
+        height: 30%;
+    }
+
+    .info-empresa {
+        margin-bottom: 0;
+    }
+
+    .cards-conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }        
+
+    .card {
+        width: 390px;
+        height: 230px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-info h3 {
+        font-size: 20px;
+    }
+
+    .card-icon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+
+    #contact {
+        width: 400px;
+    }
+
+    .contact-datos {
+        gap: 5px;
+    }
+
+    .contact-datos span {
+        font-size: 16px;
+    }
+
+    .contact-datos p {
+        font-size: 16px;
+    }
+
+    .datos img {
+        width: 25px;
+        height: 25px;
+    }
 
 }
