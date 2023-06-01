@@ -125,19 +125,20 @@ main {
 }
 
 .portada-left {
-    padding: 30px 10px;
+    padding: 5px 10px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
 
 .portada-left h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 800;
     text-align: center;
-    padding: 40px 100px 10px;
+    padding: 0px 70px 10px;
     background: linear-gradient(to right, var(--primary), var(--button));
     color: transparent;
     background-clip: text;
@@ -167,8 +168,9 @@ main {
     box-shadow: 2px 3px;
 }
 
-.active {
+.active:active {
     background: var(--primary);
+    transition: all 0.1s ease;
 }
 
 /* portada */
@@ -278,6 +280,12 @@ main {
     align-items: center;
     background: linear-gradient(to top, var(--primary), var(--secondary));
     box-shadow: 2px 2px 3px 1px black;
+    transition: all 0.03s ease;
+}
+
+.card:hover {
+    background: linear-gradient(to top, var(--primary),#ffba82);
+    transition: all 0.03s ease;
 }
 
 .card-info {
